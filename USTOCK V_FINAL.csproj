@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E54F2CB4-0E0B-46EE-A0B1-82C0EAE0BA95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Add_New_Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_New_Sell.Designer.cs">
+      <DependentUpon>Add_New_Sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_product.Designer.cs">
+      <DependentUpon>Add_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\bon_commande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\bon_commande.Designer.cs">
+      <DependentUpon>bon_commande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Devis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Devis.Designer.cs">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GESTCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GESTCategorie.Designer.cs">
+      <DependentUpon>GESTCategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_Client.Designer.cs">
+      <DependentUpon>Add_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_User.Designer.cs">
+      <DependentUpon>Add_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDesClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDesClient.Designer.cs">
+      <DependentUpon>GestionDesClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDesProduits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDesProduits.Designer.cs">
+      <DependentUpon>GestionDesProduits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionUsers.Designer.cs">
+      <DependentUpon>GestionUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LivraisonFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LivraisonFORM.Designer.cs">
+      <DependentUpon>LivraisonFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrintingDEVait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrintingDEVait.Designer.cs">
+      <DependentUpon>PrintingDEVait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Methode.cs" />
+    <Compile Include="PRODUIT.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Forms\Add_New_Sell.resx">
+      <DependentUpon>Add_New_Sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_product.resx">
+      <DependentUpon>Add_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\bon_commande.resx">
+      <DependentUpon>bon_commande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Devis.resx">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GESTCategorie.resx">
+      <DependentUpon>GESTCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_Client.resx">
+      <DependentUpon>Add_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_User.resx">
+      <DependentUpon>Add_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDesClient.resx">
+      <DependentUpon>GestionDesClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDesProduits.resx">
+      <DependentUpon>GestionDesProduits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionUsers.resx">
+      <DependentUpon>GestionUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LivraisonFORM.resx">
+      <DependentUpon>LivraisonFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrintingDEVait.resx">
+      <DependentUpon>PrintingDEVait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
